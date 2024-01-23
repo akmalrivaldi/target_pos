@@ -110,7 +110,7 @@
     });
 
     function showData() {
-        $.get(`'{{ route('setting.show') }}'`)
+        $.get('{{ route('setting.show') }}')
             .done(response => {
                 $('[name=nama_perusahaan]').val(response.nama_perusahaan);
                 $('[name=telepon]').val(response.telepon);
